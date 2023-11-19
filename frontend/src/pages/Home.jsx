@@ -14,6 +14,7 @@ import avatarIcon from '../assets/images/avatar-icon.png';
 import {Link} from 'react-router-dom';
 import {BsArrowRight } from 'react-icons/bs';
 import ServiceList from '../components/Services/ServiceList';
+import Doctorlist from '../components/Doctors/DoctorList';
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
             <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[50px] md:leading-[70px]'>We help you to live heathier</h1>
             <p className='text__para text-whiteColor'>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
 
-            <button className='btn bg-purpleColor text-blackColor text-[16px] leading-5 font-[500] hover:bg-whiteColor text-blackColor transition-all duration-300' >Consult Now</button>
+            <button className='btn bg-greencolor text-white text-[16px] leading-5 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300' >Consult Now</button>
           </div>
          
 
@@ -92,7 +93,7 @@ const Home = () => {
           <h2 className='heading text-center'>
             Providing you the best treatment
           </h2>
-          <p className='text__para text-center'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
+          <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
@@ -103,13 +104,13 @@ const Home = () => {
             </div>
 
              <div className='mt-[30px]'>
-              <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>Find a doctor</h2>
+              <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center '>Find a doctor</h2>
              <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
              
              <Link 
              to='/doctors' 
              className='w-[44px] h-[44px] rounded-full border border-solid border[#181A1E] mt-[30px] 
-             mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
+             mx-auto flex items-center justify-center group hover:bg-greencolor  hover:border-none'>
               <BsArrowRight className='group-hover:text-white w-6 h-5'/>
 
              </Link>
@@ -123,13 +124,13 @@ const Home = () => {
             </div>
 
              <div className='mt-[30px]'>
-              <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>Find a Location</h2>
+              <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center'>Find a Location</h2>
              <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
              
              <Link 
              to='/doctors' 
              className='w-[44px] h-[44px] rounded-full border border-solid border[#181A1E] mt-[30px] 
-             mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
+             mx-auto flex items-center justify-center group hover:bg-greencolor  hover:border-none'>
               <BsArrowRight className='group-hover:text-white w-6 h-5'/>
 
              </Link>
@@ -142,13 +143,13 @@ const Home = () => {
             </div>
 
              <div className='mt-[30px]'>
-              <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>Book Appointment</h2>
+              <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center'>Book Appointment</h2>
              <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
              
              <Link 
              to='/doctors' 
              className='w-[44px] h-[44px] rounded-full border border-solid border[#181A1E] mt-[30px] 
-             mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
+             mx-auto flex items-center justify-center group hover:bg-greencolor hover:border-none'>
               <BsArrowRight className='group-hover:text-white w-6 h-5'/>
 
              </Link>
@@ -161,20 +162,18 @@ const Home = () => {
 
 
      <div className="flex ">
-  <div className="container bg-irisBlueColor ml-[20px] p-4 rounded-md mr-4">
-    <label className='text-[26px] leading-9 text-headingColor font-[700] text-center' htmlFor="">Find a doctor</label>
-    <h1 className='font-[500] text-textColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
+  <div className="container bg-greencolor  ml-[20px] p-4 rounded-md mr-4 ">
+    <label className='text-[26px] leading-6 text-white font-[700] text-center' htmlFor="">Find a doctor</label>
+    <h1 className='font-[500] text-white'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>
-  <div className="container bg-purpleColor ml-[20px] p-4 rounded-md mr-4">
+  
+  <div className="container bg-lightgreencolor  ml-[20px] p-4 rounded-md mr-4 mt-10 ">
     <label className='text-[26px] leading-9 text-headingColor font-[700] text-center' htmlFor="">Our Expertise</label>
     <h1 className='font-[500] text-blackColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>
-  <div className="container bg-irisBlueColor ml-[20px] p-4 rounded-md mr-4">
-    <label className='text-[26px] leading-9 text-headingColor font-[700] text-center ' htmlFor="">Suggestion you need</label>
-    <h1 className='font-[500] text-textColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience. Our health expertise will give u best medical experience.</h1>
+ 
   </div>
-  
-</div>
+
 
     <About/>
 
@@ -183,7 +182,7 @@ const Home = () => {
       <div className="container">
         <div className='xl:w-[470px] mx-auto'>
           <h2 className='heading text-center'>Our medical services</h2>
-          <p className='text__para text-center'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
+          <p className='text_para text-center'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
         </div>
 
         <ServiceList/>
@@ -202,17 +201,17 @@ const Home = () => {
           <div className='xl:w-[670px]'>
             <h2 className='heading'>Get virtual treatment <br/>anytime.</h2>
             <ul className="pl-4">
-              <li className="text__para">
+              <li className="text_para p-[10px]">
                 1. Schedule the appointment directly.
               </li>
-              <li className="text__para">
+              <li className="text_para p-[10px] ">
                 2. Search the physician here and contact directly.
               </li>
-              <li className="text__para">
+              <li className="text_para p-[10px]">
                 3. View our physicians who are accepting new patients, use the online scheduling tool to select an appoitment time.
               </li>
             </ul>
-            <Link to='/' ><button className='btn'>Learn More</button></Link>
+            <Link to='/' ><button className='btn bg-greencolor hover:bg-lightgreencolor  transition-all duration-300'>Learn More</button></Link>
           </div>
 
 
@@ -236,12 +235,27 @@ const Home = () => {
 
                 <div className='flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]'>
                   <img src={avatarIcon} alt="" />
+                  <h4 className='text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[600] text-headingColor'>Roshan Gupta</h4>
                 </div>
 
               </div>
              </div>
 
         </div>
+      </div>
+    </section>
+
+
+    {/*-----------------Our doctors------------------------- */}
+    <section>
+      <div className="container">
+      <div className='xl:w-[470px] mx-auto'>
+          <h2 className='heading text-center'>Our Great Doctors</h2>
+          <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
+        </div>
+        
+
+        <Doctorlist/>
       </div>
     </section>
    

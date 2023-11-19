@@ -68,8 +68,8 @@ const Header = () => {
                     {
                       navlinks.map((link, index) => <li key={index}>
                         <NavLink to={link.path} className={navClass=> navClass.isActive 
-                          ? 'text-primaryColor text-[16px] leading-7 font-[600]' 
-                          : 'text-blackColor text-[16px] leading-7 font-[500] hover:text-primaryColor'}
+                          ? 'text-lightgreencolor text-[16px] leading-7 font-[600]' 
+                          : 'text-blackColor text-[16px] leading-7 font-[500] hover:text-lightgreencolor'}
                           >
                             {link.display}
                             </NavLink>
@@ -91,7 +91,7 @@ const Header = () => {
             </div>
 
             <Link to='/login'>
-                 <button className='bg-purpleColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]'>Login</button>
+                 <button className='bg-greencolor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-lightgreencolor hover:text-black transition-all duration-300'>Login</button>
             </Link>
 
            <span className='md:hidden' onClick={toggleMenu}>

@@ -29,7 +29,7 @@
     }
 
     .hero__section{
-        @apply bg-[url('./assets/images/purple.jpg')] bg-no-repeat bg-center bg-cover
+        @apply bg-[url('./assets/images/green.jpg')] bg-no-repeat bg-center bg-cover
     }
 }
 

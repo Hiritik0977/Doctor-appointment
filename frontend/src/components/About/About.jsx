@@ -21,11 +21,11 @@ const About = () => {
 
               <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order:2">
                 <h2 className='heading'>Proud to be the one of the nation best</h2>
-                <p className='tex__para'>Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
-                <p className="text__para mt-[30px]">Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
+                <p className='tex_para '>Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
+                <p className="text_para mt-[30px] ">Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
               
               
-                <button className='btn'>Learn More</button>
+                <button className='btn bg-greencolor text-blackColor text-[16px] leading-5 font-[500] hover:bg-lightgreencolor text-whiteColor transition-all duration-300 '>Learn More</button>
              
               </div>
             </div>

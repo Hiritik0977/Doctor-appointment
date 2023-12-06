@@ -17,7 +17,8 @@ export default {
         textColor: "#4E545F",
         whiteColor: "#fff",
         blackColor: "#000000",
-        gradientColor: "#f1a0b1"
+        gradientColor: "#f1a0b1",
+        red: "#800000"
       },
       boxShadow: {
           panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",

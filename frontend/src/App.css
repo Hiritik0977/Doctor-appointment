@@ -73,15 +73,6 @@ body{
   box-shadow: 3px 3px -8px 3px #ddd ;
 }
 
-.image_wrapper{
-  margin: 30px 30px;
-
-}
-
-.image_wrapper img{
-  width: 100%;
-}
-
 @media only screen and (max-width:768px){
   .navigation{
     width: 100%;
@@ -113,5 +104,3 @@ body{
     display: block;
   }
 }
-
-

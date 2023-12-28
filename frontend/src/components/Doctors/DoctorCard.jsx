@@ -10,7 +10,7 @@ const DoctorCard = ({doctor}) => {
     
     <div className='w-[60%] p-10 ml-20 '  >
       <div >
-        <img src={photo} className='w-full rounded-[10px]' alt="" />
+        <img src={photo} className='w-full' alt="" />
       </div>
 
       <h2 className='text-[18px] leading-[30px] lg:text-[26px] lg:leading-9 text-headingColor font-[500] mt-3 lg:mt-5'>{name}</h2>

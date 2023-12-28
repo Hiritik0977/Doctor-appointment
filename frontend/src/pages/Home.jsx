@@ -1,4 +1,6 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee'
+import { useEffect } from 'react';
 import About from '../components/About/About'
 
 
@@ -8,15 +10,36 @@ import heroImg03 from '../assets/images/c-med.jpg';
 import icon01 from '../assets/images/icon01.png';
 import icon02 from '../assets/images/icon02.png';
 import icon03 from '../assets/images/icon03.png';
-import featureImg from '../assets/images/feature-img.png';
+import featureImg from '../assets/images/doctor-img02.jpg';
+import faqImg from '../assets/images/doctor-img02.jpg';
 import videoIcon from '../assets/images/video-icon.png'
 import avatarIcon from '../assets/images/avatar-icon.png';
 import {Link} from 'react-router-dom';
 import {BsArrowRight } from 'react-icons/bs';
 import ServiceList from '../components/Services/ServiceList';
 import Doctorlist from '../components/Doctors/DoctorList';
+import FaqList from '../components/Faq/FaqList';
+import Testimonial from '../components/Testimonial/Testimonial';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import Overview from '../components/Overview/Overview';
+import Consult from '../components/Consult/Consult';
+import Doctorform from '../components/Doctorform/Doctorform';
+
+
+
 
 const Home = () => {
+  useEffect(() =>{
+      AOS.init(
+      {
+        offset: 100,
+        duration: 300,
+        easing: "ease-in-sine",
+        delay: 100
+      });
+      AOS.refresh();
+  }, [])
   return (
   <>
    
@@ -30,16 +53,25 @@ const Home = () => {
 
         {/*-----------HERO content------------------ */}
          <div>
-          <div className='lg:w-[570px]'>
-            <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[50px] md:leading-[70px]'>We help you to live heathier</h1>
-            <p className='text__para text-whiteColor'>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+          <div
+          data-aos="fade-right" 
+          data-aos-duration="500"
+          data-aos-once="true"
+          className='lg:w-[570px]'>
+            
+            <p className='p-[8px] w-[30%] rounded-[15px] bg-textColor text-whiteColor '>Close to you  ⚕️</p>
+
+            
+            <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[50px] md:leading-[70px]'>Let us heal your lives. </h1>
+            <h2 className='font-[500] text-[20px] text-headingColor'>Here care comes first!!!</h2>
+            <p className='text__para text-greencolor'>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
 
             <button className='btn bg-greencolor text-white text-[16px] leading-5 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300' >Consult Now</button>
           </div>
          
 
 
-         {/*-----------HERO counter------------------ */}
+         {/*-----------HERO counter------------------
 
             <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]'>
               <div>
@@ -62,27 +94,42 @@ const Home = () => {
               </div>
 
             </div>
-
+ */}
       </div>
-        
+      
+    
          {/*-----------HERO IMAGE------------------ */}
 
-         <div className='flex gap-[30px] justify-center'>
-  <div className='w-[100%] mt-[-50px]'>
+         <div
+         data-aos="fade-left" 
+         data-aos-duration="300"
+         data-aos-once="true"
+          className='flex gap-[30px] justify-center'>
+  <div className='w-[100%] mt-[150px] ' >
     <img src={heroImg01} alt="" className='w-full rounded-lg m-4' />
   </div>
-  <div className='w-[80%] mt-[-100px]' >
+  <div className='w-[80%] mt-[50px]' >
     <img src={heroImg02} alt="" className='w-full rounded-lg m-4' />
   </div>
-  <div className='w-[80%] mt-[-150px] mr-[10px]'>
+  <div className='w-[80%] mt-[-50px] mr-[10px]'>
     <img src={heroImg03} alt="" className='w-full rounded-lg m-2' />
   </div>
 </div>
 
-
     </div>
     </div>
+    
   </section>
+
+
+{/*-----------------OVERVIEW----------------------- */}
+
+
+<Overview/>
+
+
+
+  
 
 
    {/*-----------HERO section end------------------ */}
@@ -99,7 +146,7 @@ const Home = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
           
           <div className='py-[30px] px-5'>
-            <div className='flex items-center justify-center'> 
+            <div data-aos="fade-up" data-aos-duration="500" className='flex items-center justify-center'> 
                <img src={icon01} alt="" />
             </div>
 
@@ -119,7 +166,7 @@ const Home = () => {
 
 
           <div className='py-[30px] px-5'>
-            <div className='flex items-center justify-center'> 
+            <div data-aos="fade-up" data-aos-duration="500"  className='flex items-center justify-center'> 
                <img src={icon02} alt="" />
             </div>
 
@@ -128,7 +175,7 @@ const Home = () => {
              <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
              
              <Link 
-             to='/doctors' 
+             to='/store' 
              className='w-[44px] h-[44px] rounded-full border border-solid border[#181A1E] mt-[30px] 
              mx-auto flex items-center justify-center group hover:bg-greencolor  hover:border-none'>
               <BsArrowRight className='group-hover:text-white w-6 h-5'/>
@@ -138,7 +185,7 @@ const Home = () => {
           </div>
 
           <div className='py-[30px] px-5'>
-            <div className='flex items-center justify-center'> 
+            <div data-aos="fade-up" data-aos-duration="500"  className='flex items-center justify-center'> 
                <img src={icon03} alt="" />
             </div>
 
@@ -161,26 +208,83 @@ const Home = () => {
      </section>
 
 
-     <div className="flex ">
+     {/*--------------------UR WANT------------------------ */}
+
+
+
+     <section>
+      <div  data-aos="fade-up" data-aos-duration="600"className="container">
+      <div className='xl:w-[470px] mx-auto'>
+          <h2 className='heading text-center'>Word from our patients</h2>
+          <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
+        </div>
+        <Consult/>
+      </div>
+      <div className='xl:w-[470px] mx-auto p-[50px]'>
+          <h2 className='heading text-center'>Our patners are</h2>
+          
+        </div>
+      <Marquee speed={80} gradient pauseOnHover>
+        
+<div  className='image_wrapper'  >
+    <img src={heroImg03} className='w-[100px] h-[100px]' />
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[100px]' />
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[100px]' />
+  </div>
+
+  <div   className='image_wrapper'>
+    <img src={heroImg03} className='w-[100px] h-[100px]' />
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[100px]' />
+  </div>
+  
+  </Marquee>
+    </section>
+
+
+
+
+     {/*--------------------ABOUT ------------------------ */}
+
+    
+     <About/>
+
+
+     
+     
+        
+
+    
+
+
+     <div data-aos="fade-up" data-aos-duration="600" className="flex p-[60px] ">
   <div className="container bg-greencolor  ml-[20px] p-4 rounded-md mr-4 ">
-    <label className='text-[26px] leading-6 text-white font-[700] text-center' htmlFor="">Find a doctor</label>
-    <h1 className='font-[500] text-white'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
+    <label  className='text-[26px] leading-6 text-white font-[700] text-center' htmlFor="">We are known For:</label>
+    <h1  className='font-[500] text-white'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>
   
   <div className="container bg-lightgreencolor  ml-[20px] p-4 rounded-md mr-4 mt-10 ">
-    <label className='text-[26px] leading-9 text-headingColor font-[700] text-center' htmlFor="">Our Expertise</label>
+    <label  className='text-[26px] leading-9 text-headingColor font-[700] text-center' htmlFor="">Our Charity</label>
     <h1 className='font-[500] text-blackColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>
- 
+
   </div>
 
 
-    <About/>
+    
 
     {/*------------------SERVICES---------------------*/ }
     <section>
-      <div className="container">
-        <div className='xl:w-[470px] mx-auto'>
+      <div  data-aos="fade-up" data-aos-duration="600" className="container">
+        <div  className='xl:w-[470px] mx-auto'>
           <h2 className='heading text-center'>Our medical services</h2>
           <p className='text_para text-center'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
         </div>
@@ -198,7 +302,7 @@ const Home = () => {
         <div className='flex items-center justify-between flex-col lg:flex-row'>
 
           {/*-----------------feature content---------------------*/ }
-          <div className='xl:w-[670px]'>
+          <div data-aos="fade-up" data-aos-duration="300" className='xl:w-[670px]'>
             <h2 className='heading'>Get virtual treatment <br/>anytime.</h2>
             <ul className="pl-4">
               <li className="text_para p-[10px]">
@@ -216,8 +320,8 @@ const Home = () => {
 
 
              {/*-----------------feature image---------------------*/ }
-             <div className='relative z-10 xl:w-[470px] flex justify-end mt-[50px] lg:mt-0'>
-              <img src={featureImg} className='w-3/4' alt="" />
+             <div data-aos="fade-up" data-aos-duration="300" className='relative z-10 xl:w-[470px] flex justify-end mt-[50px] lg:mt-0'>
+              <img src={featureImg} className='w-3/4 rounded-[10px]' alt="" />
               <div className='w-[150px] h-[145px] lg:w-[200px] bg-white absolute bottom-[100px] left-0 md:bottom-[30px] md:left-5 z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px]'>
 
                 <div className="flex items-center justify between">
@@ -248,7 +352,7 @@ const Home = () => {
 
     {/*-----------------Our doctors------------------------- */}
     <section>
-      <div className="container">
+      <div data-aos="fade-up" data-aos-duration="600" className="container">
       <div className='xl:w-[470px] mx-auto'>
           <h2 className='heading text-center'>Our Great Doctors</h2>
           <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
@@ -258,7 +362,48 @@ const Home = () => {
         <Doctorlist/>
       </div>
     </section>
+
+
+    
+    {/*-----------------------FAQ SECTION------------------------------- */}
+    <section>
+    <div className="container">
+      <div className='flex justify-between gap-[5opx] lg:gap-0'>
+        <div className='w-1/4 hidden md:block'>
+          <img src={faqImg} alt="" />
+        </div>
+
+        <div className='w-full md:w-1/2'>
+          <h2 className='heading'>Curiosity from our patients to us: </h2>
+          <FaqList/>
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+
    
+
+
+
+
+    {/*--------------------TESTIMONIALS------------------------ */}
+    <section>
+      <div  data-aos="fade-up" data-aos-duration="600"className="container">
+      <div className='xl:w-[470px] mx-auto'>
+          <h2 className='heading text-center'>Word from our patients</h2>
+          <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
+        </div>
+        <Testimonial/>
+      </div>
+    </section>
+
+
+
+    {/*--------------------DOCTORFORM ------------------------ */}
+
+    <Doctorform/>
 
   </>
 

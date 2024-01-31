@@ -8,22 +8,29 @@ import Doctors from '../pages/Doctors/Doctors'
 import DoctorDetails from '../pages/Doctors/DoctorDetails'
 import Store from '../pages/Store'
 
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from '../pages/admin/components/Navbar/Navbar';
+import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
+
 
 const Routers = () => {
   return (
-     <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/doctors" element={<Doctors/>} />
-        <Route path="/doctors/:id" element={<DoctorDetails/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Signup/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/services" element={<Services/>} />
-        <Route path="/store" element={<Store/>} />
-        
-     </Routes>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/doctors" element={<Doctors />} />
+      <Route path="/doctors/:id" element={<DoctorDetails />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Signup />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/store" element={<Store />} />
+      {/* Nest Sidebar and Navbar under a parent Route */}
+      <Route path="/admin" element={<>
+        <Sidebar/>
+        <Navbar />
+      </>} />
+    </Routes>
   );
 };
 

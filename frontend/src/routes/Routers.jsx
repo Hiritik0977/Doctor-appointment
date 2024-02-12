@@ -9,8 +9,11 @@ import DoctorDetails from '../pages/Doctors/DoctorDetails'
 import Store from '../pages/Store'
 
 import { Routes, Route } from 'react-router-dom'
-import Navbar from '../pages/admin/components/Navbar/Navbar';
-import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
+// import Navbar from '../pages/admin/components/Navbar/Navbar';
+// import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
+import List from '../pages/admin/components/List/List';
+import Land from '../pages/admin/components/home/Land';
+
 
 
 const Routers = () => {
@@ -27,8 +30,8 @@ const Routers = () => {
       <Route path="/store" element={<Store />} />
       {/* Nest Sidebar and Navbar under a parent Route */}
       <Route path="/admin" element={<>
-        <Sidebar/>
-        <Navbar />
+      <Land/>
+        {/* <List/> */}
       </>} />
     </Routes>
   );

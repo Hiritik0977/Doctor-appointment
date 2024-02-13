@@ -12,7 +12,7 @@ import { Routes, Route } from 'react-router-dom'
 // import Navbar from '../pages/admin/components/Navbar/Navbar';
 // import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
 import List from '../pages/admin/components/List/List';
-import Land from '../pages/admin/components/home/Land';
+import Land from '../pages/admin/components/Land/Land';
 
 
 
@@ -28,6 +28,7 @@ const Routers = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/store" element={<Store />} />
+      
       {/* Nest Sidebar and Navbar under a parent Route */}
       <Route path="/admin" element={<>
       <Land/>

@@ -12,7 +12,6 @@ const Layout = () => {
            <Routers/>
            
       </main>
-      
       <Footer/>
     </>
   );

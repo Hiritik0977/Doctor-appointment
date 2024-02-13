@@ -11,7 +11,7 @@ const DoctorAbout = () => {
         </span>
         </h3>
         <p className='text_para'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum labore consequuntur animi facere qui autem earum doloremque, explicabo quidem quis. Magnam consectetur, iste quia provident fugiat aperiam totam error.
+        I am a surgeon with a high level of expertise in the field, acquired through rigorous education, training, and experience.With 4 years of practice in the field of surgery, I have encountered a wide range of cases and scenarios. 
         </p>
       </div>
 

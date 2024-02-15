@@ -8,7 +8,7 @@ import Doctors from '../pages/Doctors/Doctors'
 import DoctorDetails from '../pages/Doctors/DoctorDetails'
 import Store from '../pages/Store'
 
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useParams } from 'react-router-dom'
 // import Navbar from '../pages/admin/components/Navbar/Navbar';
 // import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
 import List from '../pages/admin/components/List/List';
@@ -17,6 +17,8 @@ import Land from '../pages/admin/components/Land/Land';
 
 
 const Routers = () => {
+  const params = useParams();
+  console.log(params)
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -28,12 +30,14 @@ const Routers = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
       <Route path="/store" element={<Store />} />
+
       
       {/* Nest Sidebar and Navbar under a parent Route */}
-      <Route path="/admin" element={<>
+      <Route path="/admin" element={
+      <>
       <Land/>
-        {/* <List/> */}
-      </>} />
+      </>
+    } />
     </Routes>
   );
 };

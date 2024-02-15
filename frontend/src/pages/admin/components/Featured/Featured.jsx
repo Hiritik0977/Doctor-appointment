@@ -9,17 +9,17 @@ const Featured = () => {
   return (
     <div className="featured">
       <div className="top">
-        <h1 className="title">Total Revenue</h1>
+        <h1 className="title">Total appointment</h1>
         <MoreVertIcon fontSize="small" />
       </div>
       <div className="bottom">
         <div className="featuredChart">
           <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
         </div>
-        <p className="title">Total sales made today</p>
-        <p className="amount">$420</p>
+        <p className="title">Total appointment made today</p>
+        <p className="appoint">10</p>
         <p className="desc">
-          Previous transactions processing. Last payments may not be included.
+          Previous appointment processing. Last appointment may not be included.
         </p>
         <div className="summary">
           <div className="item">

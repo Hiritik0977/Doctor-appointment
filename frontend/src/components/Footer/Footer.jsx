@@ -42,7 +42,7 @@ const quickLinks01 = [
 
 const quickLinks02 = [
    {
-    path: "/Find-a-doctor",
+    path: "/doctors",
     display:"Find a doctor",
    },
    {
@@ -113,9 +113,9 @@ const Footer = () => {
             </div>
 
             <div>
-            <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-whiteColor mr-5'>Social media</h2>
-            <div className='px-3 mt-[30px]  '>
-                {socialLinks.map((link,index)=> <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center bg-whiteColor justify-center group hover:bg-greencolor hover:border-none transition-all duration-300  '>
+            <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-whiteColor mr-5 '>Social media</h2>
+            <div className='px-3 mt-[20px]  '>
+                {socialLinks.map((link,index)=> <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center bg-whiteColor justify-center group hover:bg-greencolor hover:border-none transition-all duration-300 m-[10px] '>
                   {link.icon}
                 </Link>)}
               </div>

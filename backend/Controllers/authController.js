@@ -25,9 +25,7 @@ export const register = async(req,res)=>{
         else if (role==='doctor'){
             user = await Doctor.findOne({email})
         }
-        else if(role==='admin'){
-            user = await Admin.findOne({email})
-        }
+        
 
         //check if user exist
 
@@ -63,20 +61,6 @@ export const register = async(req,res)=>{
 
             
         }
-
-        if(role==='admin'){
-            user = new Admin({
-                name,
-                email,
-                password: hashPassword,
-                photo,
-                gender,
-                role
-            })
-
-            
-        }
-
         await user.save()
 
         res.status(200).json({success:true, message:'User sucessfully created'})
@@ -94,7 +78,7 @@ export const login = async(req,res)=>{
         let user = null
         const patient = await User.findOne({email})
         const doctor = await Doctor.findOne({email})
-        const amdin = await Admin.finOne({email})
+        
 
         if(patient){
             user = patient
@@ -102,9 +86,7 @@ export const login = async(req,res)=>{
         if(doctor){
             user = doctor
         }
-        if(admin){
-            user = admin
-        }
+        
 
         //check if user exist or not
         if(!user){

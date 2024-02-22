@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Doctorform = () => {
   return (
     <section className='container h-12 md:h-32 bg-Color my-10'>
@@ -7,7 +8,9 @@ const Doctorform = () => {
             <div className='flex flex-col items-center justify-center'>
                 
                     <h1 className='sm:text-md text-xs md:text-lg text-whiteColor font-[700] '>Become a health partner</h1>
-                    <button className='btn bg-greencolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-4 '>Apply Now</button>
+                    
+                    <button  className='btn bg-greencolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-4 '>Apply Now</button>
+                    
             </div  >
             <div className='flex flex-col items-center justify-center'>
                 

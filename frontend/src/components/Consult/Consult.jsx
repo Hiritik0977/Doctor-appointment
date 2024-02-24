@@ -40,157 +40,124 @@ const Consult = () => {
               }}
               >
                 
-                <SwiperSlide >
-                    
-                    <div className='py-[30px] px-5 rounded-3   '>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Ujjwal
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-purpleColor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
-
-                    </div>
-                    
-                    
-                </SwiperSlide>
-                
                 <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Abhik
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
-
-                    </div>
-                </SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Thypoid</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
                 
                 <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3 '>
-                         <div className='flex items-center gap-[13px] '>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Ankit
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Fever</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
-                    </div>
-                </SwiperSlide>
+
+                
+
+                
+<SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Dengue</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
+
     
                 
     
-                <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Subin
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
-
-                    </div>
-                </SwiperSlide>
+<SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Hepatitis</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
 
-                <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Danish
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
 
-                    </div>
-                </SwiperSlide>
+<SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Pregancy</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
-                <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Samir
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
 
-                    </div>
-                </SwiperSlide>
+<SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Liver</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
-                <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Suyash
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
 
-                    </div>
-                </SwiperSlide>
+<SwiperSlide>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Urine test</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
+
 
 
                 <SwiperSlide>
-                    <div className='py-[30px] px-5 rounded-3'>
-                         <div className='flex items-center gap-[13px]'>
-                            <img src={patientAvatar} alt="" />
-                            <div>
-                                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Ujjwal
-                            </h4>
-                            
-                            </div>
-        
-                         </div>
-        
-                         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services form them. </p>
-                         <button className='btn bg-redcolor text-white text-[14px] leading-1 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300 p-2 mx-10 my-2'>Consult</button>
+    <div className='py-[30px] px-5 rounded-3 flex flex-col justify-center items-center'>
+        <div className='flex items-center gap-[13px]'>
+            <img src={patientAvatar} alt="" />
+            <div>
+                <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>Vitamins</h4>
+            </div>
+        </div>
+        <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+    </div>
+</SwiperSlide>
 
-                    </div>
-                </SwiperSlide>
 
                
 

@@ -212,35 +212,62 @@ const Home = () => {
      <section>
       <div  data-aos="fade-up" data-aos-duration="600"className="container">
       <div className='xl:w-[470px] mx-auto'>
-          <h2 className='heading text-center'>Word from our patients</h2>
+          <h2 className='heading text-center'>Some of the common tests: </h2>
           <p className='text_para text-center p-[10px]'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</p>
         </div>
         <Consult/>
       </div>
+
+
       <div className='xl:w-[470px] mx-auto p-[50px]'>
-          <h2 className='heading text-center'>Our patners are</h2>
+          <h2 className='heading text-center'> Area of specialities</h2>
           
         </div>
       <Marquee speed={80} gradient pauseOnHover>
         
 <div  className='image_wrapper'  >
-    <img src={heroImg03} className='w-[100px] h-[100px]' />
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <h4 className='m-[10px] font-[600]'>ENT</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[100px]' />
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <h4 className='m-[10px] font-[600]'>Cardiology</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[100px]' />
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <h4 className='m-[10px] font-[600]'>Physiology</h4>
   </div>
 
   <div   className='image_wrapper'>
-    <img src={heroImg03} className='w-[100px] h-[100px]' />
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <h4 className='m-[10px] font-[600]'>Psychiatrist</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[100px]' />
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600] '>Dietician</h4>
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600]'>Radiology</h4>
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600]'>Neurology</h4>
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600]'>Urology</h4>
+  </div>
+
+  <div  className='image_wrapper' >
+    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600]'>Oncology</h4>
   </div>
   
   </Marquee>
@@ -263,12 +290,12 @@ const Home = () => {
 
 
      <div data-aos="fade-up" data-aos-duration="600" className="flex p-[60px] ">
-  <div className="container bg-greencolor  ml-[20px] p-4 rounded-md mr-4 ">
-    <label  className='text-[26px] leading-6 text-white font-[700] text-center' htmlFor="">We are known For:</label>
-    <h1  className='font-[500] text-white'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
+  <div className="container bg-creamcolor  ml-[20px] p-4 rounded-md mr-4 mt-10 ">
+    <label  className='text-[26px] leading-6 text-headingColor font-[700] text-center' htmlFor="">We are known For:</label>
+    <h1  className='font-[500] text-headingColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>
   
-  <div className="container bg-lightgreencolor  ml-[20px] p-4 rounded-md mr-4 mt-10 ">
+  <div className="container bg-creamcolor  ml-[20px] p-4 rounded-md mr-4 mt-10 ">
     <label  className='text-[26px] leading-9 text-headingColor font-[700] text-center' htmlFor="">Our Charity</label>
     <h1 className='font-[500] text-blackColor'>Trust in us we will never let you down. Our health expertise will give u best medical experience.</h1>
   </div>

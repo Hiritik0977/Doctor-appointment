@@ -13,6 +13,7 @@ import { Routes, Route, useParams } from 'react-router-dom'
 // import Sidebar from '../pages/admin/components/Sidebar/Sidebar';
 import List from '../pages/admin/components/List/List';
 import Land from '../pages/admin/components/Land/Land';
+import Doctorfillup from '../pages/Doctorfillup';
 
 
 
@@ -29,6 +30,7 @@ const Routers = () => {
       <Route path="/register" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/doctorfillup" element={<Doctorfillup/>} />
       <Route path="/store" element={<Store />} />
       
       

@@ -8,7 +8,7 @@ const DoctorCard = ({doctor}) => {
     const {id,name, avgRating, totalRating, photo, specialization, totalPatients, hospital} = doctor;
   return (
     
-    <div className='w-[60%] p-10 ml-20 '  >
+    <div className=' p-3 lg:p-5 '  >
       <div >
         <img src={photo} className='w-full rounded-[10px]' alt="" />
       </div>
@@ -26,7 +26,7 @@ const DoctorCard = ({doctor}) => {
 
   </div>
 
-       <div className='mt-[18px] lg:mt-5 flex items justigy-between'>
+       <div className='mt-[18px] lg:mt-5 flex items justify-between'>
         <div>
             <h3 className='text-[16px] leading-7 lg:text-[18px] leading-[30px] font-semibold text-headingColor'>+{totalPatients} patients</h3>
             <p className='text-[14px] leading-6 font-[400] text-textColor'>{hospital}</p>

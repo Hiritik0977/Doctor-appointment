@@ -1,4 +1,35 @@
 import Doctor from '../models/DoctorSchema.js'
+import User from '../models/UserSchema.js'
+export const registerDoctor = 
+async (req, res) => {
+    try {
+      const {
+        email,
+        password,
+        role,
+      } = req.body;
+      console.log(req.body)
+
+      // Create a new user with the provided data
+      const newDoctor = new Doctor({
+        email,
+        password,
+        
+        role: "doctor" // Set the role as "doctor"
+      });
+
+      // Save the user to the database
+      await newDoctor.save();
+
+      res.status(201).json({ message: "Doctor registered successfully", user: newDoctor });
+    } catch (error) {
+      console.error("Error registering doctor:", error);
+      res.status(500).json({ message: "An error occurred while registering doctor" });
+    }
+  }
+
+
+
 
 export const updateDoctor = async(req,res) =>
 {
@@ -44,7 +75,7 @@ export const getSingleDoctor = async(req,res) =>
 export const getAllDoctor = async(req,res) =>
 {
     try{
-        const doctors = await Doctor.find({}).select('-password');
+        const doctors = await Doctor.find({isApproved:'approved'}).select('-password');
 
         res.status(200).json({success:true, message:'Doctors found', data:doctors});
 

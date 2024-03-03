@@ -24,8 +24,9 @@ const About = () => {
 
               <div data-aos="fade-up" data-aos-duration="500"  className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order:2">
                 <h2 className='heading'>Proud to be the one of the nation best</h2>
-                <p className='tex_para '>Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
-                <p className="text_para mt-[30px] ">Doctors are one of the most important people in our society. They are lifesavers. They are the first ones to lend a helping hand when someone is struggling.</p>
+                <p className='tex_para mt-[10px]'>Our platform connects patients with expert doctors spanning various specialties, ensuring comprehensive healthcare access.</p>
+                <p className="text_para mt-[20px] ">With a diverse range of practitioners, from general physicians to specialized surgeons, we prioritize your well-being.</p>
+                <p className='text_para mt-[30px]'>our services guarantee top-notch care, streamlined appointments, and efficient time management.</p>
               
               
                 <button className='btn bg-greencolor text-blackColor text-[16px] leading-5 font-[500] hover:bg-lightgreencolor text-whiteColor transition-all duration-300 '>Learn More</button>

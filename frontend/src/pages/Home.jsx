@@ -20,6 +20,15 @@ import ServiceList from '../components/Services/ServiceList';
 import Doctorlist from '../components/Doctors/DoctorList';
 import FaqList from '../components/Faq/FaqList';
 import Testimonial from '../components/Testimonial/Testimonial';
+import ent from '../assets/images/ent.png'
+import cardiology from '../assets/images/cardiology.png';
+import physiology from '../assets/images/physiology.png';
+import psychiatrist from '../assets/images/psychiatrist.png';
+import surgery from '../assets/images/surgune.png';
+import radiology from '../assets/images/Radiology.png';
+import neurology from '../assets/images/Neurology.png';
+import urology from '../assets/images/urology.png';
+import oncology from '../assets/images/oncology.png'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Overview from '../components/Overview/Overview';
@@ -64,7 +73,7 @@ const Home = () => {
             
             <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[50px] md:leading-[70px]'>Let us heal your lives. </h1>
             <h2 className='font-[500] text-[20px] text-headingColor'>Here care comes first!!!</h2>
-            <p className='text__para text-greencolor'>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+            <p className='text__para text-greencolor'>Our platform offers seamless appointment scheduling with a vast array of specialized doctors, catering to diverse medical needs. From general practitioners to specialists, our site ensures efficient healthcare access. Patients can easily browse profiles, book appointments, and receive quality care, empowering them to take control of their health journey..</p>
 
             <button className='btn bg-greencolor text-white text-[16px] leading-5 font-[500] hover:bg-whiteColor hover:text-black transition-all duration-300' >Consult Now</button>
           </div>
@@ -149,7 +158,8 @@ const Home = () => {
 
              <div className='mt-[30px]'>
               <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center '>Find a doctor</h2>
-             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
+             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>Navigate our user-friendly interface to easily find the perfect doctor. Filter by specialty, location, and availability for personalized care.
+</p>
              
              <Link 
              to='/doctors' 
@@ -169,7 +179,8 @@ const Home = () => {
 
              <div className='mt-[30px]'>
               <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center'>Find a Location</h2>
-             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
+             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>Discover nearby healthcare facilities like Civil Hospital near Shantinagar or renowned institutions like AIIMS Hospital in India for convenient access.
+</p>
              
              <Link 
              to='/store' 
@@ -188,7 +199,7 @@ const Home = () => {
 
              <div className='mt-[30px]'>
               <h2 className='text-[26px] leading-9 text-greencolor font-[700] text-center'>Book Appointment</h2>
-             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>We are committed to being your shoulder to lean on and providing honest advice for your loved one’s situation during this delicate time.</p>
+             <p className='text-[16px] leading-7 text-textColor font[400] mt-4 text-center'>Effortlessly book appointments with your preferred doctor on your chosen date using our user-friendly system for personalized care and convenience.</p>
              
              <Link 
              to='/doctors' 
@@ -226,47 +237,47 @@ const Home = () => {
       <Marquee speed={80} gradient pauseOnHover>
         
 <div  className='image_wrapper'  >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <img src={ent} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>ENT</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <img src={cardiology} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>Cardiology</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <img src={physiology} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>Physiology</h4>
   </div>
 
   <div   className='image_wrapper'>
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    <img src={psychiatrist} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>Psychiatrist</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
-    <h4 className='m-[10px] font-[600] '>Dietician</h4>
+    <img src={surgery} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <h4 className='m-[10px] font-[600] '>Surgery</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <img src={radiology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Radiology</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <img src={neurology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Neurology</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <img src={urology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Urology</h4>
   </div>
 
   <div  className='image_wrapper' >
-    <img src={heroImg03} className='w-[100px] h-[120px] rounded cursor-pointer'  />
+    <img src={oncology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Oncology</h4>
   </div>
   

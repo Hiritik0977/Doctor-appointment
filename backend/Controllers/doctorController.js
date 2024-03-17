@@ -14,7 +14,6 @@ async (req, res) => {
       const newDoctor = new Doctor({
         email,
         password,
-        
         role: "doctor" // Set the role as "doctor"
       });
 

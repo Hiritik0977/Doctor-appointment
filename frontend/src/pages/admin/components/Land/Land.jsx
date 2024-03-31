@@ -22,6 +22,7 @@ const Land = () => {
         <div className="charts">
         <Featured/>
         <Chart title="Last 6 Months (appointments)" aspect={2 / 1} />
+
         </div>
       </div>
     </div>

@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { notification } from "antd";
 import DocterValidate from "../common/validate/docter.validate";
 import DocterApiService from "../api/docter.service";
+
+// Custom Notification Component
+const EventNotification = ({ type, message, description }) => {
+  const iconType = type === "success" ? "check-circle" : "exclamation-circle";
+  const iconColor = type === "success" ? "#52c41a" : "#f5222d";
+
+  return (
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ marginRight: "8px" }}>
+        <i className={`anticon anticon-${iconType}`} style={{ fontSize: "24px", color: "black" }} />
+      </div>
+      <div>
+        <h3 style={{ margin: 0 }}>{message}</h3>
+        <p style={{ margin: 0 }}>{description}</p>
+      </div>
+    </div>
+  );
+};
 
 const DoctorFillupForm = () => {
   const initialState = {
@@ -9,7 +28,7 @@ const DoctorFillupForm = () => {
     lastName: "",
     qualification: "",
     experience: "",
-    speciality: "",
+    specialization: "",
     phoneNumber: "",
     email: "",
     currentlyWorkingAt: "",
@@ -20,6 +39,7 @@ const DoctorFillupForm = () => {
   const [isSubmit, setSubmit] = useState(false);
   const [isLoading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,7 +47,6 @@ const DoctorFillupForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log(e)
     e.preventDefault();
     setFormErrors(DocterValidate(formValues));
     setSubmit(true);
@@ -35,8 +54,13 @@ const DoctorFillupForm = () => {
 
     try {
       const response = await DocterApiService.addDocter(formValues);
+      console.log(response, "response")
       setStatus(response.status);
+      setMessage(response.message);
+      notification.success({message:response.data.message});
     } catch (error) {
+      notification.error({message:error.message});
+      setStatus(response.status);
       console.error('Error adding doctor:', error);
     }
   };
@@ -48,9 +72,20 @@ const DoctorFillupForm = () => {
 
   useEffect(() => {
     if (status === 201) {
-      window.location.href = "/home";
+      notification.open({
+        duration: 10,
+        message: <EventNotification type="success" message={message} description={message} />,
+        onClose: () => {
+          window.location.href = "/home";
+        }
+      });
+    } else if (status === 400 || status === 500) {
+      notification.open({
+        duration: 10,
+        message: <EventNotification type="error" message={message} description={message} />,
+      });
     }
-  }, [status]);
+  }, [status, message]);
 
   // Inline CSS styles
   const containerStyle = {
@@ -183,15 +218,15 @@ const DoctorFillupForm = () => {
             <label htmlFor="speciality">Speciality:</label>
             <input
               type="text"
-              id="speciality"
-              name="speciality"
-              value={formValues.speciality}
+              id="specialization"
+              name="specialization"
+              value={formValues.specialization}
               onChange={handleChange}
               required
               style={inputStyle}
             />
             {formErrors.speciality && (
-              <div style={{ color: "red" }}>{formErrors.speciality}</div>
+              <div style={{ color: "red" }}>{formErrors.specialization}</div>
             )}
           </div>
           <div>

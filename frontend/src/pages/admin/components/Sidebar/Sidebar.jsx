@@ -39,7 +39,7 @@ const Sidebar = () => {
               <span>Patients</span>
             </li>
           </Link>
-          <Link to="/doctor" style={{ textDecoration: "none" }}>
+          <Link to="/doctorss" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>Doctors</span>

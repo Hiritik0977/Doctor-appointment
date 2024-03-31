@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar"
 import Sidebar from "../Sidebar/Sidebar"
+// import DataTable from "../Datatable/Datatable"
 import "./list.scss"
 
 const List = () => {
@@ -7,7 +8,9 @@ const List = () => {
     <div className="list">
       <Sidebar/>
       <div className="listContainer">
-        <Navbar/>
+
+       <Navbar/>
+        {/* <DataTable/> */}
       </div>
     </div>
   )

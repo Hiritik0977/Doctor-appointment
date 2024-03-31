@@ -15,6 +15,8 @@ import List from '../pages/admin/components/List/List';
 import Land from '../pages/admin/components/Land/Land';
 import Doctorfillup from '../pages/Doctorfillup';
 import Pateint from '../pages/admin/components/Patient/Pateint';
+import Khalti from '../pages/admin/components/Payment/Khalti';
+
 
 
 
@@ -34,6 +36,10 @@ const Routers = () => {
       <Route path="/doctorfillup" element={<Doctorfillup/>} />
       <Route path="/store" element={<Store />} />
       <Route path="/patient" element={<Pateint />} />
+      <Route path="/khalti" element={<Khalti />} />
+     
+      
+    
       
       
 
@@ -45,6 +51,7 @@ const Routers = () => {
       </>
     } />
     </Routes>
+    
   );
 };
 

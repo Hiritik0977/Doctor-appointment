@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const SidePanel = () => {
   return (
@@ -8,7 +9,7 @@ const SidePanel = () => {
         <span className='text-[16px] leading-7 lg:text-[22px] lg:leading-8 text-headingColor font-bold'>Rs. 200</span>
       </div>
       <div className='mt-[30px]'>
-          <p className='text_para mt-0 font-semibold text-headingColor'>Avaiable time slots:</p>
+          <p className='text_para mt-0 font-semibold text-headingColor'>Available time slots:</p>
 
           <ul className='mt-3'>
             <li className='flex items-center justify-between mb-2'>
@@ -27,9 +28,12 @@ const SidePanel = () => {
             </li>
           </ul>
       </div>
-      <button className='btn px-2 w-full rounded-md bg-greencolor'>Book appointment</button>
+      {/* Link to the payment component */}
+      <Link to="/payment">
+        <button className='btn px-2 w-full rounded-md bg-greencolor'>Book appointment</button>
+      </Link>
     </div>
-  )
+  );
 }
 
 export default SidePanel;

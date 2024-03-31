@@ -16,6 +16,7 @@
     "antd": "^5.15.4",
     "axios": "^1.6.8",
     "formik": "^2.4.5",
+    "khalti-checkout-web": "^2.2.0",
     "marquee": "^0.2.1",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",

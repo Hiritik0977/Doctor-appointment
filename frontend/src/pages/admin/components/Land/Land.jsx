@@ -6,6 +6,7 @@ import Widget from '../widget/Widget'
 import './land.scss'
 import Featured from '../Featured/Featured'
 import Chart from '../chart/Chart'
+import Datatable from '../datatable/Datatable'
 
 const Land = () => {
   return (
@@ -23,8 +24,12 @@ const Land = () => {
         <Featured/>
         <Chart title="Last 6 Months (appointments)" aspect={2 / 1} />
 
+        
+
         </div>
+        
       </div>
+     
     </div>
   )
 }

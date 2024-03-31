@@ -28,10 +28,16 @@ const fetchAllDocter = () => {
   return response;
 }
 
+const toggleDoctorStatus = (doctorId) => {
+  const response = axios.put(`${API_URL}/toggle-doctor-status/${doctorId}`);
+  return response;
+};
+
 const DocterApiService = {
   addDocter,
   getDocter,
   fetchAllDocter,
+  toggleDoctorStatus,
 };
 
 export default DocterApiService;

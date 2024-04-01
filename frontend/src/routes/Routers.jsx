@@ -16,6 +16,8 @@ import Land from '../pages/admin/components/Land/Land';
 import Doctorfillup from '../pages/Doctorfillup';
 import Pateint from '../pages/admin/components/Patient/Pateint';
 import Khalti from '../pages/admin/components/Payment/Khalti';
+import DoctorDashboard from '../pages/admin/components/DoctorDashboard/Doctordashboard';
+
 
 
 
@@ -37,6 +39,9 @@ const Routers = () => {
       <Route path="/store" element={<Store />} />
       <Route path="/patient" element={<Pateint />} />
       <Route path="/khalti" element={<Khalti />} />
+      <Route path="/dashboard" element={<DoctorDashboard />} />
+      
+     
      
       
     

@@ -23,6 +23,13 @@ const getDocter = () => {
   return response;
 };
 
+const getDocterById = (id) => {
+  console.log(id, "id")
+  const response = axios.get(`${API_URL}/${id}`);
+
+  return response;
+};
+
 const fetchAllDocter = () => {
   const response  = axios.get(`${API_URL}/all`);
   return response;
@@ -38,6 +45,7 @@ const DocterApiService = {
   getDocter,
   fetchAllDocter,
   toggleDoctorStatus,
+  getDocterById
 };
 
 export default DocterApiService;

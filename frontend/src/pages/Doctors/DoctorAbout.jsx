@@ -1,13 +1,14 @@
 
 import { formateDate } from '../../utils/formateDate';
 
-const DoctorAbout = () => {
+const DoctorAbout = (user) => {
+  console.log(user, "user")
   return (
     <div>
       <div>
         <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold flex items-center gap-2'>About of
         <span className='text-greencolor font-bold text-[24px] leading-9'>
-          Dr. Abhishek
+          {user?.user?.user.firstName}{user?.user?.user.lastName}
         </span>
         </h3>
         <p className='text_para'>
@@ -22,7 +23,7 @@ const DoctorAbout = () => {
           <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
             <div>
               <span className='text-greencolor text-[15px] leading-6 font-semibold'>{formateDate('10-04-2011')} - {formateDate('03-24-2016')}</span>
-              <p className='text-[16px] leading-6 font-medium text-textColor'>PHD in surgeon</p>
+              <p className='text-[16px] leading-6 font-medium text-textColor'>{user.user?.qualification}</p>
             </div>
             <p className='text-[14px] leading-5 font-medium text-textcolor'>Civil Hospital, kathmandu</p>
           </li>

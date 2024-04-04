@@ -40,15 +40,8 @@ const Routers = () => {
       <Route path="/patient" element={<Pateint />} />
       <Route path="/khalti" element={<Khalti />} />
       <Route path="/dashboard" element={<DoctorDashboard />} />
-      
-     
-     
-      
-    
-      
-      
 
-      
+
       {/* Nest Sidebar and Navbar under a parent Route */}
       <Route path="/admin" element={
       <>

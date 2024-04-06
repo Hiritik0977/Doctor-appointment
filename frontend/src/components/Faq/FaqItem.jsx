@@ -1,28 +1,30 @@
-import {useState} from 'react';
-import {AiOutlineMinus, AiOutlinePlus} from 'react-icons/ai';
+import { useState } from 'react';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
-const FaqItem = ({item}) => {
+const FaqItem = ({ item }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen,setIsOpen] = useState(false);
-
-    const toggleAccordion = ()=>{
-        setIsOpen(!isOpen);
-    }
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className='p-3 lg:p-5 rounded-[12px] border border-solid border-[#D9DCE2] mb-3 cursor-pointer'>
-        <div className='flex items-center justify-between gap-5' onClick={toggleAccordion}>
-            <h4 className='text-[14px] leading-7 lg:text-[18px] lg:leading-3 text-headingColor'>
-                {item.question}
-            </h4>
-            <div className={`${isOpen && "bg-greencolor   text-whiteColor border-none"} w-7 h-7 lg:w-8 lg:h-8  border border-solid border-[#141F21] rounded flex items-center justify-center`}>
-                 {isOpen ? <AiOutlineMinus/> : <AiOutlinePlus/>}
-            </div>
-
+    <div className='faq-item p-5 lg:p-5 rounded-[16px] border border-solid border-[#D9DCE2] mb-4 cursor-pointer'>
+      <div className='flex items-center justify-between gap-6' onClick={toggleAccordion}>
+        <h4 className='faq-question text-lg lg:text-xl leading-7 lg:leading-5 text-headingColor'>
+          {item.question}
+        </h4>
+        <div className={`faq-toggle-btn w-8 h-8 lg:w-10 lg:h-10 border border-solid border-[#141F21] rounded flex items-center justify-center ${isOpen ? 'bg-greencolor text-whiteColor' : ''}`}>
+          {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </div>
-      {isOpen && <div className='mt-4'>
-        <p className='text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[500] text-textColor'>{item.content}</p>
-        </div>}
+      </div>
+      {isOpen && (
+        <div className='faq-content mt-6'>
+          <p className='text-lg leading-7 lg:text-xl lg:leading-8 font-[500] text-textColor'>
+            {item.content}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

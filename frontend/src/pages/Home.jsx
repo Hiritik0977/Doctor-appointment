@@ -230,53 +230,78 @@ const Home = () => {
       </div>
 
 
+{/*------------------- Area of speciality -------------------*/}
+
       <div className='xl:w-[470px] mx-auto p-[50px]'>
           <h2 className='heading text-center'> Area of specialities</h2>
           
         </div>
       <Marquee speed={80} gradient pauseOnHover>
         
-<div  className='image_wrapper'  >
+<div  className='image_wrapper'  style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
+  <Link to ='/fever'>
     <img src={ent} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>ENT</h4>
+    </Link>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper'style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'} >
+    <Link to ='/cardio'>
     <img src={cardiology} className='w-[100px] h-[120px] rounded cursor-pointer' />
+    
     <h4 className='m-[10px] font-[600]'>Cardiology</h4>
+    </Link>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
     <img src={physiology} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>Physiology</h4>
   </div>
 
-  <div   className='image_wrapper'>
+  <div   className='image_wrapper' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
     <img src={psychiatrist} className='w-[100px] h-[120px] rounded cursor-pointer' />
     <h4 className='m-[10px] font-[600]'>Psychiatrist</h4>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper'style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'} >
     <img src={surgery} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600] '>Surgery</h4>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
     <img src={radiology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Radiology</h4>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
     <img src={neurology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Neurology</h4>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'}>
     <img src={urology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Urology</h4>
   </div>
 
-  <div  className='image_wrapper' >
+  <div  className='image_wrapper ' style={{ transition: 'filter 0.3s ease-in-out' }}
+        onMouseOver={(e) => e.target.style.filter = 'grayscale(100%)'}
+        onMouseOut={(e) => e.target.style.filter = 'grayscale(0%)'} >
     <img src={oncology} className='w-[100px] h-[120px] rounded cursor-pointer'  />
     <h4 className='m-[10px] font-[600]'>Oncology</h4>
   </div>
@@ -403,8 +428,8 @@ const Home = () => {
     {/*-----------------------FAQ SECTION------------------------------- */}
     <section>
     <div className="container">
-      <div className='flex justify-between gap-[5opx] lg:gap-0'>
-        <div className='w-1/4 hidden md:block'>
+      <div className='flex justify-between gap-[50px] lg:gap-0'>
+        <div className='w-1/3 hidden md:block'>
           <img src={faqImg} alt="" />
         </div>
 

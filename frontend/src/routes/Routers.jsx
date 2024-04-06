@@ -17,6 +17,8 @@ import Doctorfillup from '../pages/Doctorfillup';
 import Pateint from '../pages/admin/components/Patient/Pateint';
 import Khalti from '../pages/admin/components/Payment/Khalti';
 import DoctorDashboard from '../pages/admin/components/DoctorDashboard/Doctordashboard';
+import Fever from '../components/Speciality/Fever';
+import Cardio from '../components/Speciality/cardio';
 
 
 
@@ -40,6 +42,12 @@ const Routers = () => {
       <Route path="/patient" element={<Pateint />} />
       <Route path="/khalti" element={<Khalti />} />
       <Route path="/dashboard" element={<DoctorDashboard />} />
+      <Route path="/fever" element={<Fever/>} />
+      <Route path="/cardio" element={<Cardio/>} />
+      
+      
+      
+      
 
 
       {/* Nest Sidebar and Navbar under a parent Route */}

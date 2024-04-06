@@ -19,6 +19,12 @@ import Khalti from '../pages/admin/components/Payment/Khalti';
 import DoctorDashboard from '../pages/admin/components/DoctorDashboard/Doctordashboard';
 import Fever from '../components/Speciality/Fever';
 import Cardio from '../components/Speciality/cardio';
+import Pregnancy from '../components/Speciality/Pregnancy';
+import Liver from '../components/Speciality/Liver';
+import Urine from '../components/Speciality/Urine';
+import Vitamins from '../components/Speciality/Vitamins';
+import Dengue from '../components/Speciality/Dengue';
+import Hepatitis from '../components/Speciality/Hepatitis';
 
 
 
@@ -44,6 +50,14 @@ const Routers = () => {
       <Route path="/dashboard" element={<DoctorDashboard />} />
       <Route path="/fever" element={<Fever/>} />
       <Route path="/cardio" element={<Cardio/>} />
+      <Route path="/dengue" element={<Dengue/>} />
+      <Route path="/pregnancy" element={<Pregnancy/>} />
+      <Route path="/liver" element={<Liver/>} />
+      <Route path="/urine" element={<Urine/>} />
+      <Route path="/vitamin" element={<Vitamins/>} />
+      <Route path="/hepatitis" element={<Hepatitis/>} />
+
+
       
       
       

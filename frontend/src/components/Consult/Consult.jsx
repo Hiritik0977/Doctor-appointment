@@ -50,7 +50,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
        <Link to ='/cardio'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -66,7 +66,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to='/fever'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -85,7 +85,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to ='/dengue'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -103,7 +103,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to='/hepatitis'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -120,7 +120,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to='/pregnancy'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -136,7 +136,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to ='/liver'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -152,7 +152,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to ='/urine'> 
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>
@@ -169,7 +169,7 @@ const Consult = () => {
         </div>
         <p className='text-[16px] leading-7 mt-4 text-textColor font-[400]'>I have taken a medical services from them. </p>
         <Link to ='/vitamin'>
-        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Consult</button>
+        <button className='btn bg-primaryColor text-white text-[14px] leading-1 font-[500] hover:bg-lightgreencolor  hover:text-black transition-all duration-300 px-5 py-2 mx-1 my-2'>Symptoms</button>
         </Link>
     </div>
 </SwiperSlide>

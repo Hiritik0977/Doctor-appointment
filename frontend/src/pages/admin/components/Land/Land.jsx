@@ -1,19 +1,19 @@
-import React from 'react'
-import Sidebar from '../Sidebar/Sidebar'
-import Navbar from '../Navbar/Navbar'
-import Widget from '../widget/Widget'
+import React from "react";
+import Sidebar from "../Sidebar/Sidebar";
+import Navbar from "../Navbar/Navbar";
+import Widget from "../widget/Widget";
 
-import './land.scss'
-import Featured from '../Featured/Featured'
-import Chart from '../chart/Chart'
-import Datatable from '../datatable/Datatable'
+import "./land.scss";
+import Featured from "../Featured/Featured";
+import Chart from "../chart/Chart";
+import Datatable from "../datatable/Datatable";
 
 const Land = () => {
   return (
     <div className="home">
-      <Sidebar/>
+      <Sidebar />
       <div className="homeContainer">
-        <Navbar/>
+        <Navbar />
         <div className="widgets">
           <Widget type="patient" />
           <Widget type="doctor" />
@@ -21,17 +21,12 @@ const Land = () => {
           {/* <Widget type="balance" /> */}
         </div>
         <div className="charts">
-        <Featured/>
-        <Chart title="Last 6 Months (appointments)" aspect={2 / 1} />
-
-        
-
+          <Featured />
+          <Chart title="Last 6 Months (appointments)" aspect={2 / 1} />
         </div>
-        
       </div>
-     
     </div>
-  )
-}
+  );
+};
 
-export default Land
+export default Land;

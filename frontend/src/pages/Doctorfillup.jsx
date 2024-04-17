@@ -11,7 +11,10 @@ const EventNotification = ({ type, message, description }) => {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <div style={{ marginRight: "8px" }}>
-        <i className={`anticon anticon-${iconType}`} style={{ fontSize: "24px", color: "black" }} />
+        <i
+          className={`anticon anticon-${iconType}`}
+          style={{ fontSize: "24px", color: "black" }}
+        />
       </div>
       <div>
         <h3 style={{ margin: 0 }}>{message}</h3>
@@ -54,14 +57,14 @@ const DoctorFillupForm = () => {
 
     try {
       const response = await DocterApiService.addDocter(formValues);
-      console.log(response, "response")
+      console.log(response, "response");
       setStatus(response.status);
       setMessage(response.message);
-      notification.success({message:response.data.message});
+      notification.success({ message: response.data.message });
     } catch (error) {
-      notification.error({message:error.message});
+      notification.error({ message: error.message });
       setStatus(response.status);
-      console.error('Error adding doctor:', error);
+      console.error("Error adding doctor:", error);
     }
   };
 
@@ -74,15 +77,27 @@ const DoctorFillupForm = () => {
     if (status === 201) {
       notification.open({
         duration: 10,
-        message: <EventNotification type="success" message={message} description={message} />,
+        message: (
+          <EventNotification
+            type="success"
+            message={message}
+            description={message}
+          />
+        ),
         onClose: () => {
           window.location.href = "/home";
-        }
+        },
       });
     } else if (status === 400 || status === 500) {
       notification.open({
         duration: 10,
-        message: <EventNotification type="error" message={message} description={message} />,
+        message: (
+          <EventNotification
+            type="error"
+            message={message}
+            description={message}
+          />
+        ),
       });
     }
   }, [status, message]);
@@ -271,7 +286,9 @@ const DoctorFillupForm = () => {
               style={inputStyle}
             />
             {formErrors.currentlyWorkingAt && (
-              <div style={{ color: "red" }}>{formErrors.currentlyWorkingAt}</div>
+              <div style={{ color: "red" }}>
+                {formErrors.currentlyWorkingAt}
+              </div>
             )}
           </div>
         </div>

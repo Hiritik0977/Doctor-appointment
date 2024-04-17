@@ -9,7 +9,7 @@ const FaqItem = ({ item }) => {
   };
 
   return (
-    <div className='faq-item p-5 lg:p-5 rounded-[16px] border border-solid border-[#D9DCE2] mb-4 cursor-pointer'>
+    <div className='faq-item p-5 lg:p-5 rounded-[16px] border border-solid border-[#D9DCE2] mb-4 cursor-pointer '>
       <div className='flex items-center justify-between gap-6' onClick={toggleAccordion}>
         <h4 className='faq-question text-lg lg:text-xl leading-7 lg:leading-5 text-headingColor'>
           {item.question}

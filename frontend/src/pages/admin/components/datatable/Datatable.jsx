@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { DataGrid } from "@mui/x-data-grid";
-import { Space, Switch } from 'antd';
+import { Space, Switch } from "antd";
 import DocterApiService from "../../../../api/docter.service";
 import UserApiService from "../../../../api/user.service";
 
@@ -9,9 +9,13 @@ const toggleDoctorStatus = async (id, setData) => {
   try {
     console.log("Toggling doctor status for doctor with ID:", id);
     await UserApiService.toggleDoctorStatus(id);
-    setData(prevData => prevData.map(doctor =>
-      doctor._id === id ? { ...doctor, isApproved: !doctor.isApproved } : doctor
-    ));
+    setData((prevData) =>
+      prevData.map((doctor) =>
+        doctor._id === id
+          ? { ...doctor, isApproved: !doctor.isApproved }
+          : doctor
+      )
+    );
   } catch (error) {
     console.error("Error toggling doctor status:", error);
   }
@@ -22,21 +26,36 @@ const ApprovedSwitch = ({ id, isApproved, disabled, setData }) => (
     <Switch
       checked={isApproved}
       disabled={disabled}
-      style={{ backgroundColor: isApproved ? '#53C31B' : '' }}
+      style={{ backgroundColor: isApproved ? "#53C31B" : "" }}
       onClick={() => toggleDoctorStatus(id, setData)} // Pass reference to toggleDoctorStatus with appropriate parameters
     />
   </Space>
 );
 
 const userColumns = [
-  { field: 'firstName', headerName: 'First Name', width: 150 },
-  { field: 'lastName', headerName: 'Last Name', width: 150 },
-  { field: 'email', headerName: 'Email', width: 200 },
-  { field: 'contactNo', headerName: 'Contact No', width: 150 },
-  { field: 'isSpecial', headerName: 'Special', width: 120, renderCell: (params) => params.value ? 'Yes' : 'No' },
-  { field: 'isApproved', headerName: 'IsApproved', width: 120, renderCell: (params) => (
-    <ApprovedSwitch id={params.row.docId} isApproved={params.row.isApproved} disabled={false} setData={params.api.setData} />
-  )},
+  { field: "firstName", headerName: "First Name", width: 150 },
+  { field: "lastName", headerName: "Last Name", width: 150 },
+  { field: "email", headerName: "Email", width: 200 },
+  { field: "contactNo", headerName: "Contact No", width: 150 },
+  {
+    field: "isSpecial",
+    headerName: "Special",
+    width: 120,
+    renderCell: (params) => (params.value ? "Yes" : "No"),
+  },
+  {
+    field: "isApproved",
+    headerName: "IsApproved",
+    width: 120,
+    renderCell: (params) => (
+      <ApprovedSwitch
+        id={params.row.docId}
+        isApproved={params.row.isApproved}
+        disabled={false}
+        setData={params.api.setData}
+      />
+    ),
+  },
 ];
 
 const Datatable = () => {
@@ -60,8 +79,6 @@ const Datatable = () => {
 
     fetchData();
   }, []);
-
-
 
   return (
     <div className="datatable">

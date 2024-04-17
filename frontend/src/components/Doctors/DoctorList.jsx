@@ -1,4 +1,4 @@
-import react, {useState, useEffect} from "react"
+import react, { useState, useEffect } from "react"
 import DocterApiService from "../../api/docter.service";
 import { doctors } from "./../../assets/data/doctors";
 import DoctorCard from "./DoctorCard";
